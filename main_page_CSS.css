@@ -161,6 +161,7 @@ body {
     flex-direction: row;
     margin: 0%;
     flex: 100%;
+    align-items: flex-start;
 }
 
 .sidebar,
@@ -181,7 +182,7 @@ body {
 }
 
 .sidebar_zag {
-    margin: 0% 0% 0% 5%;
+    margin: 0% 0% 0% auto;
     font-size: calc(0.6rem + 1.2vw);
     font-weight: bold;
     color: transparent;
@@ -193,6 +194,7 @@ body {
 .sidebar_menu {
     text-align: center;
     padding: 0 0 0 0;
+    align-items: flex-start;
 }
 
 .sidebar_menu a {
