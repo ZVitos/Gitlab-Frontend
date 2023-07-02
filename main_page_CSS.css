@@ -1,0 +1,209 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* Высота всей страницы, ,было 100%, но поменял для добавления низа */
+    height: 2000px;
+    background-image: url(imgs/img_main_background.png);
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: Georgia;
+    font-size: 14 px;
+}
+
+.flex-main {
+    position: relative;
+    margin-left: 10%;
+    margin-top: -10px;
+}
+
+.flex-main-content-1 {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-main-content-2 {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.block-img {
+    width: 400px;
+    height: 400px;
+}
+
+.flex-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+    margin: 0% 0% 1% 1%;
+}
+
+.flex-top>* {
+    flex: 100%;
+}
+
+.logo_img {
+    flex: 15%;
+    height: calc(12vh + 1vh);
+    width: calc(1.5vw + 1vw);
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+.flex-header_slogan {
+    margin-left: 5%;
+    padding: 0.5%;
+    width: auto;
+    flex: 50%;
+}
+
+.text-Slogan {
+    text-align: center;
+    font-size: calc(0rem + 3vw);
+    font-family: URW Chancery L, cursive;
+    text-shadow:
+        0 0 1px #ffffff,
+        0 0 2px #000000,
+        0 0 5px #000000,
+        0 0 11px rgb(12, 12, 12),
+        0 0 20px rgb(36, 36, 36),
+        0 0 30px rgb(136, 136, 136),
+        0 0 55px rgb(163, 163, 163),
+        0 0 80px rgb(190, 190, 190);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, black, rgb(22, 22, 22), rgb(44, 44, 44), rgb(66, 66, 66), rgb(88, 88, 88), rgb(110, 110, 110), rgb(132, 132, 132), rgb(110, 110, 110), rgb(88, 88, 88), rgb(66, 66, 66), rgb(44, 44, 44), rgb(22, 22, 22));
+}
+
+.flex-header_menu {
+    margin-left: -30px;
+    border: 6px solid black;
+    border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
+    font-size: calc(0.3rem + 0.6vw);
+    font-weight: bold;
+    height: calc(1rem + 3vh);
+    margin: 0% 1% 0% 1%;
+    display: table;
+    background-image: url(imgs/img7.png);
+    background-repeat: no-repeat;
+    flex: 50%;
+}
+
+.flex-header_menu ul {
+    display: table-row;
+}
+
+.flex-header_menu li {
+    display: table-cell;
+}
+
+.flex-header_menu a:hover {
+    color: black;
+    background: linear-gradient(45deg, grey, rgb(97, 153, 34), rgb(202, 202, 202), rgb(192, 189, 35), white);
+}
+
+.flex-header_menu li a {
+    display: block;
+    padding: 20px 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+.work-area {
+    margin: 0%;
+}
+
+.sidebar,
+.content {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    text-align: center;
+    width: calc(10rem + 10vw);
+    background-image: url(imgs/img7.png);
+    background-repeat: no-repeat;
+    border: 7.5px solid;
+    border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
+}
+
+.sidebar_zag {
+    margin: 0% 0% 0% 5%;
+    font-size: calc(0.6rem + 1.2vw);
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(45deg, grey, rgb(97, 153, 34), rgb(202, 202, 202), rgb(192, 189, 35), white);
+}
+
+.sidebar_menu {
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+.sidebar_menu a {
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar_menu a:hover {
+    color: black;
+    padding: 5% 0% 5% 0%;
+    background: linear-gradient(45deg, grey, rgb(97, 153, 34), rgb(202, 202, 202), rgb(192, 189, 35), white);
+}
+
+.sidebar_menu-item {
+    list-style-type: none;
+    font-size: calc(0.4rem + 0.7vw);
+    padding: 5% 0% 5% 0%;
+    font-weight: bold;
+}
+
+.sidebar_menu-item-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.content {
+    width: 70%;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.bottom-site {
+    width: 100%;
+    margin: 0% 35% 0% 35%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+.wrapper {
+    min-height: 100%;
+}
