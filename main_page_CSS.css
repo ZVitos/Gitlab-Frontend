@@ -41,27 +41,6 @@ body {
     align-content: center;
 } */
 
-.info-main-part {
-    display: block;
-}
-
-.info-main-part-img {
-    width: calc(18vw + 1vw);
-    height: calc(30vh + 2vh);
-    position: relative;
-    float: right;
-}
-
-.info-main-part-text {
-    font-family: 'Lucida Sans Unicode';
-    font-size: 30px;
-    margin-right: 10px;
-    margin: 0px;
-    text-indent: 6%;
-    text-align: left;
-}
-
-
 /* .block-img {
     width: 400px;
     height: 400px;
@@ -214,7 +193,7 @@ body {
 .sidebar_menu-item {
     list-style-type: none;
     font-size: calc(0.4rem + 0.7vw);
-    padding: 5% 0% 5% 0%;
+    padding: 10% 0% 10% 0%;
     font-weight: bold;
 }
 
@@ -226,6 +205,42 @@ body {
 
 .content {
     width: 70%;
+}
+
+/* Основная информация страницы*/
+
+.info-main-part {
+    display: block;
+}
+
+.info-main-part-img {
+    width: calc(5rem + 25vw);
+    height: calc(5rem + 25vh);
+    position: relative;
+    float: right;
+    border: 3px solid;
+    border-image: linear-gradient(90deg, black, rgb(22, 22, 22), rgb(44, 44, 44), rgb(66, 66, 66), rgb(88, 88, 88), rgb(110, 110, 110), rgb(132, 132, 132), rgb(110, 110, 110), rgb(88, 88, 88), rgb(66, 66, 66), rgb(44, 44, 44), rgb(22, 22, 22)) 1;
+}
+
+.info-main-part-text {
+    font-family: 'Lucida Sans Unicode';
+    font-size: calc(0.5rem + 0.8vw);
+    margin: 0% 1% 0% 2%;
+    text-indent: 6%;
+    text-align: left;
+}
+
+.termin_workout {
+    font-size: calc(0.6rem + 0.9vw);
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(68, 68, 68), black);
+}
+
+.termin_workout-accent {
+    font-weight: bold;
 }
 
 h1 {
