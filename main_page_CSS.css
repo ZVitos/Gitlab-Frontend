@@ -10,38 +10,62 @@ body {
     background-repeat: no-repeat;
 }
 
+/* New commit from Onik date: 15:42 */
 /*Редакт текста основной страницы*/
+/* New commit from Onik date: 15:58 */
+/* New commit from Onik date: 16:05 */
 body {
     font-family: Georgia;
     font-size: 14 px;
 }
 
-.flex-main {
+/* .flex-main {
     position: relative;
     margin-left: 10%;
     margin-top: -10px;
-}
+} */
 
-.flex-main-content-1 {
+/* .flex-main-content-1 {
     display: flex;
     flex-direction: center;
     align-items: center;
     justify-content: center;
     align-content: center;
-}
+} */
 
-.flex-main-content-2 {
+/* .flex-main-content-2 {
     display: flex;
     flex-direction: center;
     align-items: center;
     justify-content: center;
     align-content: center;
+} */
+
+.info-main-part {
+    display: block;
 }
 
-.block-img {
+.info-main-part-img {
+    width: calc(18vw + 1vw);
+    height: calc(30vh + 2vh);
+    position: relative;
+    float: right;
+}
+
+.info-main-part-text {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 30px;
+    margin-right: 10px;
+    margin: 0px;
+    text-indent: 6%;
+    text-align: left;
+}
+
+
+/* .block-img {
     width: 400px;
     height: 400px;
-}
+} */
 
 .flex-top {
     display: flex;
@@ -124,12 +148,24 @@ body {
     text-align: center;
 }
 
-
-
+.main-line-top {
+    border: none;
+    height: 0;
+    padding: 0;
+    margin: 10px 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
 
 .work-area {
+    display: flex;
+    flex-direction: row;
     margin: 0%;
+    flex: 100%;
+    align-items: flex-start;
 }
+
+/* Text */
 
 .sidebar,
 .content {
@@ -149,7 +185,7 @@ body {
 }
 
 .sidebar_zag {
-    margin: 0% 0% 0% 5%;
+    margin: 0% 0% 0% auto;
     font-size: calc(0.6rem + 1.2vw);
     font-weight: bold;
     color: transparent;
@@ -161,6 +197,7 @@ body {
 .sidebar_menu {
     text-align: center;
     padding: 0 0 0 0;
+    align-items: flex-start;
 }
 
 .sidebar_menu a {
