@@ -1,3 +1,4 @@
+
 html,
 body {
     margin: 0;
@@ -228,19 +229,39 @@ body {
     margin: 0% 1% 0% 2%;
     text-indent: 6%;
     text-align: left;
+    color: white;
+    background-image: url(imgs/img_block_background_new.png);
+    border-radius: 20px;
+    border: 5px solid  rgb(49, 49, 49);
 }
 
 .termin_workout {
     font-size: calc(0.6rem + 0.9vw);
-    font-weight: bold;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(68, 68, 68), black);
+    font-weight: bolder;
+    color: white;
 }
 
 .termin_workout-accent {
     font-weight: bold;
+}
+
+.main_border {
+    border: 2px solid;
+    margin: 1% 0.5% 1% 0.5%;
+    border-image: linear-gradient(90deg, black, rgb(22, 22, 22), rgb(44, 44, 44), rgb(66, 66, 66), rgb(88, 88, 88), rgb(88, 88, 88), rgb(66, 66, 66), rgb(44, 44, 44), rgb(22, 22, 22)) 1;
+}
+
+.info-history-part-text {
+    font-family: 'Lucida Sans Unicode';
+    font-size: calc(0.5rem + 0.8vw);
+    margin: 0% 1% 0% 2%;
+    padding: 2%;
+    text-indent: 6%;
+    text-align: left;
+    color: white;
+    background-image: url(imgs/img_block_background_new.png);
+    border-radius: 20px;
+    border: 5px solid  rgb(49, 49, 49);
 }
 
 h1 {
