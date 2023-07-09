@@ -162,6 +162,7 @@ body {
     background-repeat: no-repeat;
     border: 7.5px solid;
     border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
+    max-height: 600px;
 }
 
 .sidebar_zag {
@@ -183,18 +184,18 @@ body {
 .sidebar_menu a {
     display: block;
     text-decoration: none;
+    padding: 5% 0% 5% 0%;
 }
 
 .sidebar_menu a:hover {
     color: black;
-    padding: 5% 0% 5% 0%;
     background: linear-gradient(45deg, grey, rgb(97, 153, 34), rgb(202, 202, 202), rgb(192, 189, 35), white);
 }
 
 .sidebar_menu-item {
     list-style-type: none;
     font-size: calc(0.4rem + 0.7vw);
-    padding: 10% 0% 10% 0%;
+    padding: 8% 0% 10% 0%;
     font-weight: bold;
 }
 
