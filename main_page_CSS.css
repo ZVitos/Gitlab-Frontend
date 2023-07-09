@@ -55,16 +55,16 @@ body {
     margin: 0% 0% 1% 1%;
 }
 
-.flex-top>* {
-    flex: 100%;
-}
-
 .logo_img {
     flex: 15%;
-    height: calc(12vh + 1vh);
-    width: calc(1.5vw + 1vw);
+    height: calc(12vh + 2vh);
+    width: calc(10vw + 1vw);
     text-align: center;
     margin-top: 0.5%;
+}
+
+.flex-top a {
+    display: block;
 }
 
 .flex-header_slogan {
@@ -272,7 +272,7 @@ h1 {
 
 .bottom-site {
     display: block;
-    height: 350px;
+    height: 300px;
     width: auto;
     background-color: rgb(0, 0, 0);
     background-image: url(imgs/img7-double.png);
@@ -280,6 +280,33 @@ h1 {
     background-size: auto;
     border-radius: 6px;
 }
+
+.bottom-site-flex {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    box-shadow: 4px 0px 0px 1px dark;
+    box-shadow: inset;
+}
+
+.bottom-site-flex-1 {
+    flex: 30%;
+}
+
+.bottom-site-flex-2 {
+    flex: 30%;
+    height: 100%;
+}
+
+.bottom-site-tex-flex-2-text {
+    text-align: center;
+    padding-top: 215px;
+}
+
+.bottom-site-flex-3 {
+    flex: 30%;
+}
+
 
 .wrapper {
     min-height: 100%;
