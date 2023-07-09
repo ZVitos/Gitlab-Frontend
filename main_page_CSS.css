@@ -287,24 +287,67 @@ h1 {
     flex: 1;
     box-shadow: 4px 0px 0px 1px dark;
     box-shadow: inset;
+    align-items: center;
+    align-content: center;
+    padding-left: 10px;
 }
+/* Стиль для будущей линии для низа сайта над копирайтом */
+.main-line-bottom {
+    border: none;
+    height: 0;
+    padding: 0;
+    margin: 7px 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    width: 20%;
+    margin-left: 100px;
+} 
 
 .bottom-site-flex-1 {
-    flex: 30%;
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
 }
 
 .bottom-site-flex-2 {
-    flex: 30%;
-    height: 100%;
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
 }
 
+/* 
 .bottom-site-tex-flex-2-text {
     text-align: center;
     padding-top: 215px;
-}
+} */
 
 .bottom-site-flex-3 {
-    flex: 30%;
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-4 {
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-5 {
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.just-text {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 
