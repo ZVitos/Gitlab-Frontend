@@ -293,7 +293,7 @@ h1 {
     padding-left: 10px;
 }
 /* Стиль для будущей линии для низа сайта над копирайтом */
-.main-line-bottom {
+/* .main-line-bottom {
     border: none;
     height: 0;
     padding: 0;
@@ -302,8 +302,41 @@ h1 {
     border-bottom: 2px solid #333;
     width: 20%;
     margin-left: 100px;
-} 
+} */
 
+.bottom-hr-line-1, .bottom-hr-line-2, .bottom-hr-line-3, .bottom-hr-line-4, .bottom-hr-line-5 {
+    border: none;
+    height: 0;
+    padding: 0;
+    border-top: 2px solid #c33838;
+    border-bottom: 2px solid #af1c1c;
+}
+
+.bottom-hr-line-1 {
+    width: 20%;
+    margin-left: 127px;
+    
+}
+
+.bottom-hr-line-2 {
+    width: 20%;
+    margin-left: 138px;
+}
+
+.bottom-hr-line-3 {
+    width: 20%;
+    margin-left: 122px;
+}
+
+.bottom-hr-line-4 {
+    width: 20%;
+    margin-left: 113px;
+}
+
+.bottom-hr-line-5 {
+    width: 20%;
+    margin-left: 123px;
+}
 .bottom-site-flex-1 {
     flex: 20%;
     height: 300px;
@@ -349,6 +382,8 @@ h1 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    size: 18px;
+    padding-left: 10px;
 }
 
 
