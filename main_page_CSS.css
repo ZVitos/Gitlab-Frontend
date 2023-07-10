@@ -280,17 +280,16 @@ h1 {
     background-repeat: no-repeat;
     background-size: auto;
     border-radius: 6px;
+    box-shadow: 4px 0px 0px 1px dark;
+    box-shadow: inset;
 }
 
 .bottom-site-flex {
     display: flex;
     flex-direction: row;
     flex: 1;
-    box-shadow: 4px 0px 0px 1px dark;
-    box-shadow: inset;
     align-items: center;
     align-content: center;
-    padding-left: 10px;
 }
 /* Стиль для будущей линии для низа сайта над копирайтом */
 /* .main-line-bottom {
@@ -313,39 +312,52 @@ h1 {
 }
 
 .bottom-hr-line-1 {
-    width: 20%;
-    margin-left: 127px;
-    
+    width: 80%;
+    position: sticky;
 }
 
 .bottom-hr-line-2 {
-    width: 20%;
-    margin-left: 138px;
+    width: 80%;
+    position: sticky;
 }
 
 .bottom-hr-line-3 {
-    width: 20%;
-    margin-left: 122px;
+    width: 80%;
+    position: sticky;
 }
 
 .bottom-hr-line-4 {
-    width: 20%;
-    margin-left: 113px;
+    width: 80%;
+    position: sticky;
 }
 
 .bottom-hr-line-5 {
-    width: 20%;
-    margin-left: 123px;
+    width: 80%;
+    position: sticky;
 }
-.bottom-site-flex-1 {
+
+.bottom-site-flex-0 {
     flex: 20%;
     height: 300px;
     /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
     border: 2px solid green;
 }
 
+.bottom-site-flex-1 {
+    flex: 15%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-1-src {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .bottom-site-flex-2 {
-    flex: 20%;
+    flex: 15%;
     height: 300px;
     /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
     border: 2px solid green;
@@ -358,29 +370,35 @@ h1 {
 } */
 
 .bottom-site-flex-3 {
-    flex: 20%;
+    flex: 15%;
     height: 300px;
     /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
     border: 2px solid green;
 }
 
 .bottom-site-flex-4 {
-    flex: 20%;
+    flex: 15%;
     height: 300px;
     /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
     border: 2px solid green;
 }
 
 .bottom-site-flex-5 {
-    flex: 20%;
+    flex: 15%;
     height: 300px;
     /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
     border: 2px solid green;
 }
 
+.bottom-site-flex-6 {
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
 .just-text {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
     text-align: center;
     size: 18px;
     padding-left: 10px;
