@@ -6,7 +6,7 @@ body {
     /* Высота всей страницы, ,было 100%, но поменял для добавления низа */
     height: 2000px;
     background-image: url(imgs/img_main_background.png);
-    background-size: auto;
+    background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -139,10 +139,22 @@ body {
 
 .work-area {
     display: flex;
+    align-items: row;
+    flex-direction: row;
+}
+
+.flex-work-area {
+    display: flex;
     flex-direction: row;
     margin: 0%;
     flex: 100%;
     align-items: flex-start;
+}
+
+.flex-left-table {
+    display: flex;
+    align-items: column;
+    flex-direction: column;
 }
 
 /* Text */
@@ -157,12 +169,13 @@ body {
 
 .sidebar {
     text-align: center;
-    width: calc(10rem + 10vw);
+    width: calc(8rem + 10vw);
     background-image: url(imgs/img7.png);
     background-repeat: no-repeat;
+    background-size: cover;
     border: 7.5px solid;
     border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
-    max-height: 600px;
+    /* max-height: 600px; */
 }
 
 .sidebar_zag {
@@ -274,11 +287,10 @@ h1 {
 .bottom-site {
     display: block;
     height: 300px;
-    width: auto;
     background-color: rgb(0, 0, 0);
     background-image: url(imgs/img7-double.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     border-radius: 6px;
     box-shadow: 4px 0px 0px 1px dark;
     box-shadow: inset;
