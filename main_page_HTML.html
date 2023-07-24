@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <script src="main_page_JS.js"></script>
     <!-- Верхушка сайта -->
     <div class="wrapper">
         <div class="flex-top">
@@ -34,16 +33,24 @@
         <div class="work-area">
             <div class="flex-left-table">
                 <div class="user_authorization">
-                    <div>
-                        <h1> Введите логин </h1>
-                        <input id="login">
-                    </div>
-                    <div>
-                        <h1> Введите пароль </h1>
-                        <input id="password">
-                    </div>
-                    <div>
-                        <button onclick="" type="submit" id="submit"> Зарегистрироваться </button>
+                    <div class="user_authorization_content">
+
+                        <div class="user_authorization_content_login">
+                            <h1 style="color: white; font-size: 25px;"> Введите логин </h1>
+                            <input id="login" ; style=" font-size: 100%">
+                        </div>
+
+                        <div class="user_authorization_content_password">
+                            <h1 style="color: white; font-size: 25px"> Введите пароль </h1>
+                            <input id="password" ; style="font-size: 100%">
+                        </div>
+
+                        <div>
+                            <button type="submit" id="submitreg" style="font-size: 25px"> Зарегистрироваться </button>
+                        </div>
+                        <div>
+                            <button type="submit" id="submit" style="font-size: 25px; margin-bottom: 15px;"> Забыли пароль? </button>
+                        </div>
                     </div>
                 </div>
                 <div class="sidebar">
@@ -216,6 +223,7 @@
             </div>
         </div>
     </footer>
+    <script async src="main_page_JS.js"></script>
 </body>
 
 </html>

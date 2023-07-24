@@ -1,26 +1,24 @@
-let login = document.querySelector('#login');
-let password = document.querySelector('#password');
-let submit = document.querySelector('#submit');
+// window.onload = function() {
+//     myButton.addEventListener('click', Registration);
+// }
+// Подключение кнопки через id //  
+const myButton = document.getElementById('submitreg');
+// Обработчик событий для кнопки Зарегистироваться //
+myButton.addEventListener('click', Registration);
 
-// Create base user //
-let userInfo = {};
+console.log(myButton);
+// Класс для создания объектов класса полей пользователя //
+let userInfo = {
+    password: "",
+    login: "",
+};
 
-function User(login, password) {
-    this.login = login;
-    this.password = password;
+
+// Вывод в консоль введённых данных //
+function Registration() {
+    let login = document.getElementById('login').value;
+    let password = document.getElementById('password').value;
+
+    console.log(login);
+    console.log(password);
 }
-
-function createId(users) {
-    return Object.keys(users).length;
-}
-// Подключаем обработчик событий при нажатии на кнопку //
-document.getElementById("submit").addEventListener("click" ,() => {
-    const loginUser = name.value;
-    const passwordUser = password.value;
-
-    const user = new User(loginUser, passwordUser)
-    const userId = 'User' + createId(users);
-    users[userId] = user;
-    
-    console.log(user);
-})

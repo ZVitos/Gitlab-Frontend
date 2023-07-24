@@ -1,4 +1,3 @@
-
 html,
 body {
     margin: 0;
@@ -11,20 +10,30 @@ body {
     background-repeat: no-repeat;
 }
 
+
 /* New commit from Onik date: 15:42 */
+
+
 /*Редакт текста основной страницы*/
+
+
 /* New commit from Onik date: 15:58 */
+
+
 /* New commit from Onik date: 16:05 */
+
 body {
     font-family: Georgia;
     font-size: 14 px;
 }
+
 
 /* .flex-main {
     position: relative;
     margin-left: 10%;
     margin-top: -10px;
 } */
+
 
 /* .flex-main-content-1 {
     display: flex;
@@ -34,6 +43,7 @@ body {
     align-content: center;
 } */
 
+
 /* .flex-main-content-2 {
     display: flex;
     flex-direction: center;
@@ -41,6 +51,7 @@ body {
     justify-content: center;
     align-content: center;
 } */
+
 
 /* .block-img {
     width: 400px;
@@ -78,15 +89,7 @@ body {
     text-align: center;
     font-size: calc(0rem + 3vw);
     font-family: URW Chancery L, cursive;
-    text-shadow:
-        0 0 1px #ffffff,
-        0 0 2px #000000,
-        0 0 5px #000000,
-        0 0 11px rgb(12, 12, 12),
-        0 0 20px rgb(36, 36, 36),
-        0 0 30px rgb(136, 136, 136),
-        0 0 55px rgb(163, 163, 163),
-        0 0 80px rgb(190, 190, 190);
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #000000, 0 0 5px #000000, 0 0 11px rgb(12, 12, 12), 0 0 20px rgb(36, 36, 36), 0 0 30px rgb(136, 136, 136), 0 0 55px rgb(163, 163, 163), 0 0 80px rgb(190, 190, 190);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -147,7 +150,6 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0%;
-    flex: 100%;
     align-items: flex-start;
 }
 
@@ -156,6 +158,30 @@ body {
     align-items: column;
     flex-direction: column;
 }
+
+.user_authorization {
+    background-image: url(imgs/img7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 7.5px solid;
+    position: relative;
+    border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
+    height: auto;
+}
+
+.user_authorization_content {
+    text-align: center;
+    font-size: 25px;
+}
+
+.user_authorization_content_login {
+    margin-top: 20px;
+}
+
+.user_authorization_content_password {
+    position: relative;
+}
+
 
 /* Text */
 
@@ -217,10 +243,10 @@ body {
     text-decoration: none;
 }
 
-
 .content {
     width: 70%;
 }
+
 
 /* Основная информация страницы*/
 
@@ -247,7 +273,7 @@ body {
     color: white;
     background-image: url(imgs/img7.png);
     border-radius: 20px;
-    border: 5px solid  rgb(49, 49, 49);
+    border: 5px solid rgb(49, 49, 49);
 }
 
 .termin_workout {
@@ -276,7 +302,7 @@ body {
     color: white;
     background-image: url(imgs/img7.png);
     border-radius: 20px;
-    border: 5px solid  rgb(49, 49, 49);
+    border: 5px solid rgb(49, 49, 49);
 }
 
 h1 {
@@ -303,7 +329,11 @@ h1 {
     align-items: center;
     align-content: center;
 }
+
+
 /* Стиль для будущей линии для низа сайта над копирайтом */
+
+
 /* .main-line-bottom {
     border: none;
     height: 0;
@@ -315,7 +345,11 @@ h1 {
     margin-left: 100px;
 } */
 
-.bottom-hr-line-1, .bottom-hr-line-2, .bottom-hr-line-3, .bottom-hr-line-4, .bottom-hr-line-5 {
+.bottom-hr-line-1,
+.bottom-hr-line-2,
+.bottom-hr-line-3,
+.bottom-hr-line-4,
+.bottom-hr-line-5 {
     border: none;
     height: 0;
     padding: 0;
@@ -375,6 +409,7 @@ h1 {
     border: 2px solid green;
 }
 
+
 /* 
 .bottom-site-tex-flex-2-text {
     text-align: center;
@@ -408,6 +443,7 @@ h1 {
     /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
     border: 2px solid green;
 }
+
 .just-text {
     color: white;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
