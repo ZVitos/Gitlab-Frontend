@@ -5,14 +5,23 @@ body {
     /* Высота всей страницы, ,было 100%, но поменял для добавления низа */
     height: 2000px;
     background-image: url(imgs/img_main_background.png);
-    background-size: auto;
+    background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+
 /* New commit from Onik date: 15:42 */
+
+
 /*Редакт текста основной страницы*/
+
+
 /* New commit from Onik date: 15:58 */
+
+
 /* New commit from Onik date: 16:05 */
+
 body {
     font-family: Georgia;
     font-size: 14 px;
@@ -40,26 +49,6 @@ body {
     align-content: center;
 } */
 
-.info-main-part {
-    display: block;
-}
-
-.info-main-part-img {
-    width: calc(18vw + 1vw); 
-    height: calc(30vh + 2vh);
-    position: relative;
-    float: right;
-}
-
-.info-main-part-text {
-    font-family: 'Lucida Sans Unicode';
-    font-size: 30px;
-    margin-right: 10px;
-    margin: 0px;
-    text-indent: 6%;
-    text-align: left;
-}
-
 
 /* .block-img {
     width: 400px;
@@ -74,16 +63,16 @@ body {
     margin: 0% 0% 1% 1%;
 }
 
-.flex-top>* {
-    flex: 100%;
-}
-
 .logo_img {
     flex: 15%;
-    height: calc(12vh + 1vh);
-    width: calc(1.5vw + 1vw);
+    height: calc(12vh + 2vh);
+    width: calc(10vw + 1vw);
     text-align: center;
     margin-top: 0.5%;
+}
+
+.flex-top a {
+    display: block;
 }
 
 .flex-header_slogan {
@@ -97,15 +86,7 @@ body {
     text-align: center;
     font-size: calc(0rem + 3vw);
     font-family: URW Chancery L, cursive;
-    text-shadow:
-        0 0 1px #ffffff,
-        0 0 2px #000000,
-        0 0 5px #000000,
-        0 0 11px rgb(12, 12, 12),
-        0 0 20px rgb(36, 36, 36),
-        0 0 30px rgb(136, 136, 136),
-        0 0 55px rgb(163, 163, 163),
-        0 0 80px rgb(190, 190, 190);
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #000000, 0 0 5px #000000, 0 0 11px rgb(12, 12, 12), 0 0 20px rgb(36, 36, 36), 0 0 30px rgb(136, 136, 136), 0 0 55px rgb(163, 163, 163), 0 0 80px rgb(190, 190, 190);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -158,11 +139,51 @@ body {
 
 .work-area {
     display: flex;
+    align-items: row;
+    flex-direction: row;
+}
+
+.flex-work-area {
+    display: flex;
     flex-direction: row;
     margin: 0%;
-    flex: 100%;
     align-items: flex-start;
 }
+
+.flex-left-table {
+    display: flex;
+    align-items: column;
+    flex-direction: column;
+}
+
+.user_authorization {
+    background-image: url(imgs/img7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 7.5px solid;
+    position: relative;
+    border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
+    height: auto;
+}
+
+.user_authorization_content {
+    text-align: center;
+    font-size: 25px;
+}
+
+.user_authorization_content_login {
+    margin-top: 20px;
+}
+
+.user_authorization_content_password {
+    position: relative;
+}
+
+
+/* .sidebar+.user_authorization {
+    width: 100%;
+} */
+
 
 /* Text */
 
@@ -176,11 +197,12 @@ body {
 
 .sidebar {
     text-align: center;
-    width: calc(10rem + 10vw);
     background-image: url(imgs/img7.png);
     background-repeat: no-repeat;
+    background-size: cover;
     border: 7.5px solid;
     border-image: linear-gradient(45deg, grey, rgb(97, 153, 34), black, rgb(192, 189, 35), white) 1;
+    /* max-height: 600px; */
 }
 
 .sidebar_zag {
@@ -202,18 +224,18 @@ body {
 .sidebar_menu a {
     display: block;
     text-decoration: none;
+    padding: 5% 0% 5% 0%;
 }
 
 .sidebar_menu a:hover {
     color: black;
-    padding: 5% 0% 5% 0%;
     background: linear-gradient(45deg, grey, rgb(97, 153, 34), rgb(202, 202, 202), rgb(192, 189, 35), white);
 }
 
 .sidebar_menu-item {
     list-style-type: none;
     font-size: calc(0.4rem + 0.7vw);
-    padding: 5% 0% 5% 0%;
+    padding: 8% 0% 10% 0%;
     font-weight: bold;
 }
 
@@ -222,9 +244,66 @@ body {
     text-decoration: none;
 }
 
-
 .content {
     width: 70%;
+}
+
+
+/* Основная информация страницы*/
+
+.info-main-part {
+    display: block;
+}
+
+.info-main-part-img {
+    width: calc(5rem + 25vw);
+    height: calc(5rem + 25vh);
+    position: relative;
+    float: right;
+    border: 3px solid;
+    border-image: linear-gradient(90deg, black, rgb(22, 22, 22), rgb(44, 44, 44), rgb(66, 66, 66), rgb(88, 88, 88), rgb(110, 110, 110), rgb(132, 132, 132), rgb(110, 110, 110), rgb(88, 88, 88), rgb(66, 66, 66), rgb(44, 44, 44), rgb(22, 22, 22)) 1;
+}
+
+.info-main-part-text {
+    font-family: 'Lucida Sans Unicode';
+    font-size: calc(0.5rem + 0.8vw);
+    margin: 0% 1% 0% 2%;
+    text-indent: 6%;
+    text-align: left;
+    padding: 2%;
+    color: white;
+    background-image: url(imgs/img7.png);
+    border-radius: 20px;
+    border: 5px solid rgb(49, 49, 49);
+}
+
+.termin_workout {
+    font-size: calc(0.6rem + 0.9vw);
+    font-weight: bolder;
+    color: white;
+}
+
+.termin_workout-accent {
+    font-weight: bold;
+}
+
+.main_border {
+    border: 2px solid;
+    margin: 1% 0.5% 1% 0.5%;
+    border-image: linear-gradient(90deg, black, rgb(22, 22, 22), rgb(44, 44, 44), rgb(66, 66, 66), rgb(88, 88, 88), rgb(88, 88, 88), rgb(66, 66, 66), rgb(44, 44, 44), rgb(22, 22, 22)) 1;
+}
+
+.info-history-part-text {
+    font-family: 'Lucida Sans Unicode';
+    font-size: calc(0.5rem + 0.8vw);
+    margin: 0% 1% 0% 2%;
+    padding: 2%;
+    text-indent: 6%;
+    text-align: left;
+    color: white;
+    background-image: url(imgs/img7.png);
+    border-radius: 20px;
+    border: 5px solid rgb(49, 49, 49);
 }
 
 h1 {
@@ -233,12 +312,145 @@ h1 {
 }
 
 .bottom-site {
-    width: 100%;
-    margin: 0% 35% 0% 35%;
-    box-sizing: border-box;
+    display: block;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(imgs/img7-double.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 0px 0px 1px dark;
+    box-shadow: inset;
+}
+
+.bottom-site-flex {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* Стиль для будущей линии для низа сайта над копирайтом */
+
+
+/* .main-line-bottom {
+    border: none;
+    height: 0;
+    padding: 0;
+    margin: 7px 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    width: 20%;
+    margin-left: 100px;
+} */
+
+.bottom-hr-line-1,
+.bottom-hr-line-2,
+.bottom-hr-line-3,
+.bottom-hr-line-4,
+.bottom-hr-line-5 {
+    border: none;
+    height: 0;
+    padding: 0;
+    border-top: 2px solid #c33838;
+    border-bottom: 2px solid #af1c1c;
+}
+
+.bottom-hr-line-1 {
+    width: 80%;
+    position: sticky;
+}
+
+.bottom-hr-line-2 {
+    width: 80%;
+    position: sticky;
+}
+
+.bottom-hr-line-3 {
+    width: 80%;
+    position: sticky;
+}
+
+.bottom-hr-line-4 {
+    width: 80%;
+    position: sticky;
+}
+
+.bottom-hr-line-5 {
+    width: 80%;
+    position: sticky;
+}
+
+.bottom-site-flex-0 {
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-1 {
+    flex: 15%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-1-src {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom-site-flex-2 {
+    flex: 15%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+
+/* 
+.bottom-site-tex-flex-2-text {
     text-align: center;
-    background-color: cadetblue;
-    color: aliceblue;
+    padding-top: 215px;
+} */
+
+.bottom-site-flex-3 {
+    flex: 15%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-4 {
+    flex: 15%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-5 {
+    flex: 15%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.bottom-site-flex-6 {
+    flex: 20%;
+    height: 300px;
+    /* Выделил каждый флекс для того, чтобы удобнее было делать разметку */
+    border: 2px solid green;
+}
+
+.just-text {
+    color: white;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    text-align: center;
+    size: 18px;
+    padding-left: 10px;
 }
 
 .wrapper {

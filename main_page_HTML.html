@@ -13,9 +13,10 @@
 </head>
 
 <body>
+    <!-- Верхушка сайта -->
     <div class="wrapper">
         <div class="flex-top">
-            <img src="imgs/Workout_Logo.png" class="logo_img">
+            <a href="/main_page/main_page_HTML.html"> <img src="imgs/Workout_Logo.png" class="logo_img"> </a>
             <div class="flex-header_slogan"><span class="text-Slogan"> ALL about the workout</span></div>
             <div class="flex-header_menu">
                 <ul>
@@ -27,49 +28,202 @@
             </div>
         </div>
         </header>
+        <!-- Главна страница -->
         <hr class="main-line-top">
         <div class="work-area">
-            <div class="sidebar">
-                <span class="sidebar_zag">Упражнения и элементы</span>
-                <ul class="sidebar_menu">
-                    <li class="sidebar_menu-item">
-                        <a href="/" class="sidebar_menu-item-link">БАЗА</a>
-                    </li>
-                    <li class="sidebar_menu-item">
-                        <a href="/" class="sidebar_menu-item-link">СИЛОВОЕ</a>
-                    </li>
-                    <li class="sidebar_menu-item">
-                        <a href="/" class="sidebar_menu-item-link">СТАТИКА</a>
-                    </li>
-                    <li class="sidebar_menu-item">
-                        <a href="/" class="sidebar_menu-item-link">ДИНАМИКА</a>
-                    </li>
-                    <li class="sidebar_menu-item">
-                        <a href="/" class="sidebar_menu-item-link">ИСТОРИЯ</a>
-                    </li>
-                    <li class="sidebar_menu-item">
-                        <a href="/" class="sidebar_menu-item-link">РЕЙТИНГ СЛОЖНОСТИ</a>
-                    </li>
-                </ul>
-            </div class="info-main-part">
-                <p class="info-main-part-text"> <img src="./imgs/img6.png" class="info-main-part-img">
-                    <a style="color:#0de814" >Воркаут (Street Workout) </a> - относительно новый вид спорта, созданный как отдельное движение
-                    только в 21 веке. Своё активное развитие получил после 2010-ых. Многими элемента очень схож
-                    с гимнастикой, но есть существенная разница. Например, в отличие от жёсткого вида спорта
-                    воркаут существует как свободное, ничем не ограниченное направление. Для занятий не
-                    нужно посещать зал или иметь какое-либо специальное оборудование.
-                    Достаточно турника и брусьев. А можно даже и без них. Воркаут нацелен именно на упражнения, связанные с
-                    различными манипуляциями своего тела. Существует <a style="color:#0de814">БЕСКОНЕЧНОЕ<a> множество элементов и их
-                    вариаций(в том числе с утяжелением). Главный принцип всегда один - работа лишь над
-                    <a style="color: #0de814;"> СОБСТВЕННЫМ ТЕЛОМ<a>.
-                <p>
+            <div class="flex-left-table">
+                <div class="user_authorization">
+                    <div class="user_authorization_content">
+
+                        <div class="user_authorization_content_login">
+                            <h1 style="color: white; font-size: 25px;"> Введите логин </h1>
+                            <input id="login" ; style=" font-size: 100%">
+                        </div>
+
+                        <div class="user_authorization_content_password">
+                            <h1 style="color: white; font-size: 25px"> Введите пароль </h1>
+                            <input id="password" ; style="font-size: 100%">
+                        </div>
+
+                        <div>
+                            <button type="submit" id="submitreg" style="font-size: 25px"> Зарегистрироваться </button>
+                        </div>
+                        <div>
+                            <button type="submit" id="submit" style="font-size: 25px; margin-bottom: 15px;"> Забыли пароль? </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <span class="sidebar_zag">Упражнения и элементы</span>
+                    <ul class="sidebar_menu">
+                        <li class="sidebar_menu-item">
+                            <a href="/base_page/base_page_html.html" class="sidebar_menu-item-link">БАЗА</a>
+                        </li>
+                        <li class="sidebar_menu-item">
+                            <a href="/" class="sidebar_menu-item-link">СИЛОВОЕ</a>
+                        </li>
+                        <li class="sidebar_menu-item">
+                            <a href="/" class="sidebar_menu-item-link">СТАТИКА</a>
+                        </li>
+                        <li class="sidebar_menu-item">
+                            <a href="/" class="sidebar_menu-item-link">ДИНАМИКА</a>
+                        </li>
+                        <li class="sidebar_menu-item">
+                            <a href="/" class="sidebar_menu-item-link">ИСТОРИЯ</a>
+                        </li>
+                        <li class="sidebar_menu-item">
+                            <a href="/" class="sidebar_menu-item-link">РЕЙТИНГ СЛОЖНОСТИ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-work-area">
+                <div class="info-main-part">
+                    <div class="info-main-part-text"> <img src="./imgs/img6.png" class="info-main-part-img">
+                        <span class="termin_workout">ВОРКАУТ (STREET WORKOUT)</span> - относительно новый вид спорта, созданный как отдельное движение только в 21 веке. Своё активное развитие получил после 2010-ых. Многими элемента очень схож с гимнастикой,
+                        но есть существенная разница. Например, в отличие от жёсткого вида спорта воркаут существует как свободное, ничем не ограниченное направление. Для занятий не нужно посещать зал или иметь какое-либо специальное оборудование. Достаточно
+                        турника и брусьев. А можно даже и без них. Воркаут нацелен именно на упражнения, связанные с различными манипуляциями своего тела. Существует <span class="termin_workout-accent">бесконечное</span> множество элементов и их вариаций(в
+                        том числе с утяжелением). Главный принцип всегда ОДИН - работа лишь над
+                        <span class="termin_workout-accent"> собственным телом и весом</span>.
+                    </div>
+                    <div class="main_border"></div>
+                    <div class="info-history-part-text"> <img src="" class=""> Воркаут берет свое начало еще на заре развития человечества и определяется в естественных двигательных действиях людей. Прежде чем сформироваться в том виде, в каком мы его знаем сегодня, воркаут прошел долгий
+                        эволюционный путь. Истоки этого пути следует искать в античных формах тренировок – <span class="termin_workout">КАЛИСТЕНИКА</span>. Калистеника — это вид силовых тренировок с собственным весом. Цель – <span class="termin_workout-accent">физическое совершенство</span>.
+                        Калистеника как средство физического воспитания развивалась на протяжении многих веков. Раньше все двигательные действия ограничивались бытом. Многие из них до сих пор находят применение в воркауте – например, висы, подтягивания,
+                        подъемы, перевороты и др. Калистеника как метод тренировок возникла еще в Древней Греции. Одним из первых античных государств, уделявших особое внимание физической подготовке, была Лаконика с главным городом Спартой. Так, Геродот
+                        упоминал калистенику в своем описании Фермопильского сражения; персидский царь Ксеркс направил отряды разведчиков проследить за долиной. Разведчики доложили, что спартанские воины выполняют физические упражнения. Целью тренировок
+                        в Спарте было воспитание сильного воина. В программе присутствовали кулачный бой и приемы рукопашной схватки. Следует отметить, что физическими упражнениями в Древней Греции занимались представители привилегированных сословий,
+                        рабам же категорически запрещалось посещать занятия. Искусство владения собственным телом у греков переняли римляне. Сливками атлетического общества считались гладиаторы – воины, сражавшиеся с соперником на забаву публике на специальных
+                        аренах. У гладиаторов была система тренировок, основанная преимущественно на упражнениях с собственным весом.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- низ сайта -->
     <footer>
         <div class="bottom-site">
+            <div class="bottom-site-flex">
+                <div class="bottom-site-flex-0">
+                </div>
+                <div class="bottom-site-flex-1">
+                    <tr>
+                        <td>
+                            <p class="just-text"> О нас </p>
+                            <hr class="bottom-hr-line-1">
+                            <td>
+                                <p class="just-text" style="align-items: left;"> Наш сайт создан для развития и поддержания спорта во всех уголках Земли </p>
+                            </td>
+                            <td>
+                                <div class="bottom-site-flex-1-src">
+                                    <div>
+                                        <img src="./imgs/vk.png" style="height: calc(4vh + 0.5vh); width: calc(2vw + 0.5vw);">
+                                    </div>
+                                    <div>
+                                        <img src="./imgs/youtube.png" style="height:calc(6vh + 0.5vh); width: calc(3vw + 0.5vw); margin-top: -6px;">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-3</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-4</p>
+                            </td>
+                        </td>
+                    </tr>
+                </div>
+                <div class="bottom-site-flex-2">
+                    <tr>
+                        <td>
+                            <p class="just-text"> Главная </p>
+                            <hr class="bottom-hr-line-2">
+                        </td>
+                        <td>
+                            <p class="just-text" style="align-items: left;">Text-1</p>
+                        </td>
+                        <td>
+                            <p class="just-text">Text-2</p>
+                        </td>
+                        <td>
+                            <p class="just-text">Text-3</p>
+                        </td>
+                        <td>
+                            <p class="just-text">Text-4</p>
+                        </td>
+                    </tr>
+                    <!-- <table class="bottom-site-flex-2-table">
+                        <h1 class="bottom-site-tex-flex-2-text" style="color: white;"> Флекс бокс 2 </h1>
+                        <hr class="main-line-bottom">
+                        <h1 style="text-align: center; color:white;">© 2023 Все права защищены</h1>
+                    </table> -->
+                </div>
+                <div class="bottom-site-flex-3">
+                    <tr>
+                        <td>
+                            <p class="just-text"> Поддержка </p>
+                            <hr class="bottom-hr-line-3">
+                            <td>
+                                <p class="just-text" style="align-items: left;">Text-1</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-2</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-3</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-4</p>
+                            </td>
+                        </td>
+                    </tr>
+                </div>
+                <div class="bottom-site-flex-4">
+                    <tr>
+                        <td>
+                            <p class="just-text"> Информация </p>
+                            <hr class="bottom-hr-line-4">
+                            <td>
+                                <p class="just-text" style="align-items: left;">Text-1</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-2</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-3</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-4</p>
+                            </td>
+                        </td>
+                    </tr>
+                </div>
+                <div class="bottom-site-flex-5">
+                    <tr>
+                        <td>
+                            <p class="just-text"> Контакты </p>
+                            <hr class="bottom-hr-line-5">
+                            <td>
+                                <p class="just-text" style="align-items: left;">Text-1</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-2</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-3</p>
+                            </td>
+                            <td>
+                                <p class="just-text">Text-4</p>
+                            </td>
+                        </td>
+                    </tr>
+                </div>
+                <div class="bottom-site-flex-6">
+                </div>
+            </div>
         </div>
     </footer>
+    <script async src="main_page_JS.js"></script>
 </body>
 
 </html>
