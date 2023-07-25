@@ -183,6 +183,11 @@ body {
 }
 
 
+/* .sidebar+.user_authorization {
+    width: 100%;
+} */
+
+
 /* Text */
 
 .sidebar,
@@ -195,7 +200,6 @@ body {
 
 .sidebar {
     text-align: center;
-    width: calc(8rem + 10vw);
     background-image: url(imgs/img7.png);
     background-repeat: no-repeat;
     background-size: cover;
